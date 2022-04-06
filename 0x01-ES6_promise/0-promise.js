@@ -1,7 +1,5 @@
 function getResponseFromAPI() {
-  return Promise.resolve({
-    body: 'A promise always fullfilled',
-  });
+  return new Promise((resolve, reject) => [resolve, reject]);
 }
 
 export default getResponseFromAPI;
