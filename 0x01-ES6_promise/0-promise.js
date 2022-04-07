@@ -1,7 +1,4 @@
-function getResponseFromAPI() {
-  return Promise.resolve({
-    body: 'A promise always fullfilled',
-  });
+/* eslint-disable */
+export default function getResponseFromAPI() {
+  return new Promise(() => {});
 }
-
-export default getResponseFromAPI;
