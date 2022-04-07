@@ -14,23 +14,23 @@ export class HolbertonClass {
 }
 
 export class StudentHolberton {
-    constructor(firstName, lastName) {
-      this._firstName = firstName;
-      this._lastName = lastName;
-      this._holbertonClass = holbertonClass;
-    }
-    
-    get fullName() {
-      return `${this._firstName} ${this._lastName}`;
-    }
+  constructor(firstName, lastName) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+    this._holbertonClass = holbertonClass;
+  }
+
+  get fullName() {
+    return `${this._firstName} ${this._lastName}`;
+  }
+
+  get holbertonClass() {
+    return this.holbertonClass;
+  }
   
-    get holbertonClass() {
-      return this.holbertonClass;
-    }
-  
-    get fullStudentDescription() {
-      return `${self._firstName} ${self._lastName} - ${self._holbertonClass.year} - ${self._holbertonClass.location}`;
-    }
+  get fullStudentDescription() {
+    return `${self._firstName} ${self._lastName} - ${self._holbertonClass.year} - ${self._holbertonClass.location}`;
+  }
 }
 
 const class2019 = new HolbertonClass(2019, 'San Francisco');
